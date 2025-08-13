@@ -1,0 +1,6 @@
+dist
+output
+public
+node_modules
+.eslintignore
+.prettierignore

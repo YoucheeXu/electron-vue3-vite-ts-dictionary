@@ -1,0 +1,6 @@
+onlyBuiltDependencies:
+  - electron
+  - esbuild
+  - lzo-decompress
+  - sqlite3
+  - vue-demi

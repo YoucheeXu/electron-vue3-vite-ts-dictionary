@@ -1,0 +1,10 @@
+{
+  // ? 继承tsconfig.json配置 同名配置项会被本配置文件覆盖
+  "extends": "./tsconfig.json", // 继承主配置文件
+  "compilerOptions": {
+    "noEmit": false, // 不生成输出文件
+    // "module": "ESNext",
+    "sourceMap": true, // 生成源映射文件
+  },
+  "include": ["electron"] // 指定需要包含的文件 (此处指定electron文件夹下所有文件)
+}

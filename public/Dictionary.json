@@ -1,0 +1,181 @@
+{
+	"DictBases": [
+		{
+			"Name": "Google",
+			"Desc": "Google",
+			"Dict": "dict/Google.zip",
+			"Format": {
+				"Type": "ZIP",
+				"Compression": "ZIP_DEFLATED",
+				"Compress_Level": 2
+			}
+		},
+		{
+			"Name": "D15000",
+			"Desc": "15000",
+			"Dict": "dict/15000.dict",
+			"Format": {
+				"Type": "SQLite"
+			}
+		},
+		{
+			"Name": "牛津英语搭配词典",
+			"Desc": "牛津英语搭配词典",
+			"Dict": "dict/牛津英语搭配词典.mdx",
+			"Format": {
+				"Type": "mdx"
+			}
+		}
+	],
+	"AudioBases": [
+		{
+			"Name": "Google",
+			"Audio": "audio/Google.zip",
+			"Desc": "US",
+			"Format": {
+				"Type": "ZIP",
+				"Compression": "ZIP_DEFLATED",
+				"CompressLevel": 2
+			}
+		}
+	],
+	"WordsDict": {
+		"Name": "Words",
+		"Dict": "dict/Words.dict",
+		"allLvls": [
+			"CET6",
+			"TOEFL"
+		]
+	},	
+	"Users": [
+		{
+			"Name": "anonymous",
+			"Target": [
+				"New"
+			],
+			"Progress": "dict/anonymous.progress"
+		}
+	],
+	"Agents": {
+		"bIEAgent": false,
+		"activeAgent": "v2rayN",
+		"Info": [
+			{
+				"Name": "XX-Net",
+				"IP": "http://127.0.0.1:8087",
+				"Program": "D:\\Green\\XX-Net\\start.bat"
+			},
+			{
+				"Name": "v2rayN",
+				"IP": "http://127.0.0.1:10809",
+				"Program": "D:\\Green\\v2rayN-Core\\v2rayN.exe"
+			}
+		]
+	},
+	"Miss": {
+		"miss_dict": "logs/miss.txt",
+		"miss_audio": "logs/miss.txt"
+	},
+	"Dictionary":{
+		"common": {
+			"ver": "0.0.0.1alpha"
+		},
+		"GUI": {
+			"Skin": "Skin/",
+			"bFullScreen": false,
+			"Height": 548,
+			"Width": 701,
+			"BackColor": "67,160,255",
+			"ShowHiRatio": 0.5,
+			"ShowWiRatio": 0.5
+		},
+		"Tabs": [
+			{
+				"Name": "Google",
+				"Dict": "Google"
+			},
+			{
+				"Name": "T15000",
+				"Dict": "D15000"
+			},
+			{
+				"Name": "牛津英语搭配词典",
+				"Dict": "牛津英语搭配词典"
+			}
+		],
+		"Tab": "牛津英语搭配词典",
+		"WordsDict": "Words",
+		"AudioBase": "Google",
+		"User": "anonymous",
+		"Debug": {
+			"bEnable": false,
+			"file": "logs/Dictionary.log"
+		}
+	},
+	"ReciteWords":{
+		"common": {
+			"ver": "0.0.0.1alpha"
+		},
+		"GUI": {
+			"Skin": "Skin/",
+			"BackColor": "67,160,255",
+			"bFullScreen": true,
+			"Height": 551,
+			"Width": 701
+		},
+		"StudyMode": {
+			"LeastFamiliar": 0,
+			"GroupNum": 10
+		},
+		"TestMode": {
+			"GroupNum": 10,
+			"Times": 4
+		},
+		"General": {
+			"NewLimit": 50,
+			"TotalLimit": 200
+		},
+		"TimeInterval": [
+			{
+				"Interval": 5,
+				"Unit": "m"
+			},
+			{
+				"Interval": 30,
+				"Unit": "m"
+			},
+			{
+				"Interval": 12,
+				"Unit": "h"
+			},
+			{
+				"Interval": 1,
+				"Unit": "d"
+			},
+			{
+				"Interval": 2,
+				"Unit": "d"
+			},
+			{
+				"Interval": 4,
+				"Unit": "d"
+			},
+			{
+				"Interval": 7,
+				"Unit": "d"
+			},
+			{
+				"Interval": 15,
+				"Unit": "d"
+			}
+		],
+		"Debug": {
+			"bEnable": true,
+			"file": "logs/ReciteWords.log"
+		},
+		"DictBase": "D15000",
+		"WordsDict": "Words",
+		"AudioBase": "Google",
+		"User": "anonymous"
+	}
+}

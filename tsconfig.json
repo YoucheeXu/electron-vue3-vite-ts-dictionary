@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 目标 ECMAScript 版本
+    "module": "NodeNext", // 使用 ESNext 模块系统
+    // "module": "ESNext", // 使用 ESNext 模块系统
+    "moduleResolution": "NodeNext", // 使用 Node.js 模块解析策略
+    "declaration": true, // 生成对应的 `.d.ts` 声明文件
+    "strict": true, // 启用所有严格类型检查选项
+    "outDir": "output/build", // 输出目录
+    "skipLibCheck": true, // 跳过库文件的类型检查，提升编译速度
+    "esModuleInterop": true, // 允许以更轻松的方式导入 CommonJS 模块
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~s/*": ["./src/store/*"],
+      "~h/*": ["./src/hooks/*"],
+      "~/*": ["./types/*"]
+    },
+    "typeRoots": [
+      "./node_modules/@types", // 类型定义的默认路径
+      "./src/types" // 自定义类型定义文件的路径
+    ]
+  },
+  "include": [
+    "electron/**/*.ts",
+    "app/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/**/__tests__/*",
+    "node_modules", // 排除 Node.js 模块
+    "public",
+    "output", // 排除输出目录
+    "**/*.spec.ts" // 排除测试文件
+  ]
+}
